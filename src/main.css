@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+}
+
+.navBox {
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+
+.navBox .navItem {
+  text-align: center;
+  width: 88px;
+  height: 44px;
+  line-height: 44px;
+  font-size: 16px;
+}
+
+.navBox .active {
+  font-weight: 900;
+}
+
+.navBox .bar {
+  width: 44px;
+  height: 4px;
+  background: orangered;
+  position: absolute;
+  bottom: 0;
+  transition: .3s ease;
+}
+
+.contentBox {
+  width: 1500px;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  transition: .3s ease;
+}
+
+.contentBox .contentItem {
+  width: 375px;
+}
+
+.contentBox .map h1 {
+  width: 100%;
+  text-align: center;
+  color: #666;
+  font-size: 24px;
+  line-height: 40px;
+}
+
+.map #map {
+  width: 350px;
+  margin: 10px auto;
+  height: 220px;
+  border: 1px solid #ccc;
+}
+
+.map .detail {
+  width: 100%;
+}
+
+.map .detail h1 {
+  width: 100%;
+  color: #666;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.map .detail .detailBox {
+  width: 100%;
+}
+
+.map .detail .detailBox .detailMain {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.map .detail .detailBox .detailMain:nth-of-type(even) {
+  background: #FFF8D7;
+}
+
+.map .detail .detailBox .detailMain h2 {
+  width: 25%;
+  text-align: center;
+  height: 35px;
+  line-height: 35px;
+  font-size: 18px;
+  color: #666;
+}
+
+.map .detail .detailBox .detailMain p {
+  width: 25%;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+}
+
+.map .detail .searchBox {
+  width: 80%;
+  margin: 10px auto;
+}
+
+.map .detail .searchBox input {
+  width: 68%;
+  height: 28px;
+  line-height: 30px;
+}
+
+input::-webkit-input-placeholder {
+  color: #aab2bd;
+  font-size: 16px;
+}
+
+.map .detail .searchBox .searchResult {
+  width: 100%;
+  margin: 10px auto;
+  height: 55px;
+  padding: 5px;
+  border: 1px dashed #ccc;
+  white-space: pre-wrap;
+}
+
+.news .banner {
+  margin: 5px auto;
+  width: 100%;
+}
+
+.news .banner img {
+  width: 100%;
+}
+
+.news .newsContent {
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.news .newsContent .line {
+  width: 1px;
+  height: 1200px;
+  background: #ccc;
+  margin: 20px 30px 0 50px;
+}
+
+.news .newsContent .newsList {
+  flex: 1;
+  margin: 0 10px 0 0;
+}
+
+.news .newsContent .newsList .newsItem {
+  width: 100%;
+  background: #ededed;
+  padding: 10px;
+  position: relative;
+  margin: 20px auto;
+}
+
+.news .newsContent .newsList .newsItem .time {
+  color: #777;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.news .newsContent .newsList .newsItem .content {
+  color: #333;
+  font-size: 16px;
+}
+
+.news .newsContent .newsList .newsItem::before {
+  content: '';
+  position: absolute;
+  top: 26px;
+  left: -31px;
+  border: 16px solid transparent;
+  border-right-color: #ededed;
+}
+
+.news .newsContent .newsList .newsItem::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: 4px solid red;
+  border-radius: 9px;
+  top: 35px;
+  left: -40px;
+}
